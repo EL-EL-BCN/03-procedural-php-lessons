@@ -1,0 +1,38 @@
+CREATE TABLE users (
+	user_id int (11) AUTO_INCREMENT PRIMARY KEY not null,
+	user_first varchar(256) not null,
+	user_last varchar(256) not null,
+	user_email varchar(256) not null,
+	user_uid varchar(256) not null,
+	user_pwd varchar(256) not null
+);
+
+CREATE TABLE profileimg (
+	profileimg_id int (11) AUTO_INCREMENT PRIMARY KEY not null,
+	profileimg_user_id int (11) not null,
+	profileimg_status int (11) not null
+);
+
+
+
+
+INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd)
+	VALUES ('Daniel', 'Nielsen', 'usemmtuts@gmail.com', 'Admin', 'test123');
+
+INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd)
+	VALUES ('Elliott', 'Farmer', 'elliottbcn@gmail.com', 'Admin', 'test123');
+
+INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd)
+	VALUES ('John', 'Smith', 'JSmith@gmail.com', 'JohnnyS', 'test1234');
+
+
+INSERT INTO profileimg (profileimg_user_id, profileimg_status)
+	Values (3, 1);
+
+INSERT INTO profileimg (profileimg_user_id, profileimg_status)
+	Values (13, 1);
+
+
+11
+13
+	

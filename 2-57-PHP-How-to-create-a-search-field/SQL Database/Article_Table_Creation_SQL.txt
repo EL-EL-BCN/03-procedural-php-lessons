@@ -1,0 +1,13 @@
+CREATE TABLE article (
+	art_id int (11) not null PRIMARY KEY AUTO_INCREMENT,
+	art_title varchar (256) not null,
+	art_text text not null,
+	art_author varchar (256) not null,
+	art_date datetime not null	
+);
+
+INSERT INTO article (art_title, art_text, art_author, art_date)
+VALUES ('50 Great summer Recipies', 'There are many recipies that you can create that involve grilling, toasting, boiling and frying', 'Jane Doe', '2020-04-17 12:23:11');
+
+INSERT INTO article (art_title, art_text, art_author, art_date)
+VALUES ('A series of Computer software', 'In this example you will learn about some of the software used on computers. This involves basic software and more advanced software used on computers ', 'John Smith', '2020-04-17 12:23:11');
